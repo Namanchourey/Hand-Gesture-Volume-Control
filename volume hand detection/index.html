@@ -1,0 +1,23 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hand Gesture Volume Control</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>🎵 Hand Gesture Volume Control 🎵</h1>
+        <video id="video" autoplay playsinline></video>
+        <p>Move your hand **UP** to increase volume 🔊 and **DOWN** to decrease 🔉</p>
+        <audio id="audio" controls>
+            <source src="./sample.mp4" type="audio/mp4">
+        </audio>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/handpose"></script>
+    <script src="script.js"></script>
+</body>
+</html>
